@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POINTIS - Pointages</title>
+    <link rel="stylesheet" href="assets/css/pointage.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        <div class="logo-text">P<span class="logo-dot">◉</span>INTIS</div>
+        <div class="logo-sub">Gestion Numérique</div>
+      </div>
+      <nav class="nav">
+        <a class="nav-item" href="accueil.html"
+          ><span class="nav-icon">🏠</span> Accueil</a
+        >
+        <a class="nav-item active"
+          ><span class="nav-icon">📍</span> Pointages</a
+        >
+        <a class="nav-item"><span class="nav-icon">〰️</span> Cours</a>
+        <a class="nav-item"><span class="nav-icon">⊞</span> Notes</a>
+        <a class="nav-item"><span class="nav-icon">📝</span> Exams</a>
+        <a class="nav-item"><span class="nav-icon">👤</span> Kids</a>
+        <a class="nav-item"><span class="nav-icon">⚙️</span> Administrations</a>
+      </nav>
+      <div class="sidebar-footer">
+        <a class="nav-item"><span class="nav-icon">🔧</span> Paramétrages</a>
+        <a class="nav-item"><span class="nav-icon">🚪</span> Déconnexion</a>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="topbar-left">
+          <div class="topbar-greeting">BIENVENUE, Seny TARNAGADA</div>
+          <div class="topbar-sub">
+            Vous avez <span>12</span> notification(s) aujourd'hui.
+          </div>
+        </div>
+        <div class="topbar-right">
+          <button class="notif-btn">
+            🔔<span class="notif-badge">3</span>
+          </button>
+          <div class="user-chip">
+            <div class="user-avatar">🧑</div>
+            <div>
+              <div style="font-size: 11px; font-weight: 800">Seny</div>
+              <div
+                style="font-size: 10px; color: var(--muted); font-weight: 500"
+              >
+                TARNAGADA ∨
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="content">
+        <div class="page-header">
+          <div class="page-title-row">
+            <div class="page-icon">📍</div>
+            <div class="page-title">Listes des pointages</div>
+          </div>
+          <div class="date-range">
+            <div class="date-badge">📅 10 Fév 2026</div>
+            <span style="color: #aaa; font-weight: 700">AU</span>
+            <div class="date-badge">📅 11 Fév 2026 ∨</div>
+          </div>
+        </div>
+
+        <div class="table-card">
+          <table>
+            <thead>
+              <tr>
+                <th>Cours</th>
+                <th>Professeurs</th>
+                <th>Date</th>
+                <th>Heures</th>
+                <th>Statut</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="course-name">Cours de Français</td>
+                <td>
+                  <div class="prof-cell">
+                    <div
+                      class="prof-avatar"
+                      style="
+                        background: linear-gradient(135deg, #ffecd2, #fcb69f);
+                      "
+                    >
+                      👩
+                    </div>
+                    <span class="prof-name">Isabelle Dubois</span>
+                  </div>
+                </td>
+                <td class="date-cell">11/02/2026</td>
+                <td class="hours">11:05 - 12:00</td>
+                <td><span class="badge badge-present">Présent</span></td>
+              </tr>
+              <tr>
+                <td class="course-name">Cours de Français</td>
+                <td>
+                  <div class="prof-cell">
+                    <div
+                      class="prof-avatar"
+                      style="
+                        background: linear-gradient(135deg, #ffecd2, #fcb69f);
+                      "
+                    >
+                      👩
+                    </div>
+                    <span class="prof-name">Isabelle Dubois</span>
+                  </div>
+                </td>
+                <td class="date-cell">11/02/2026</td>
+                <td class="hours">10:05 - 11:00</td>
+                <td><span class="badge badge-present">Présent</span></td>
+              </tr>
+              <tr>
+                <td class="course-name">Cours de Physique - chimie</td>
+                <td>
+                  <div class="prof-cell">
+                    <div
+                      class="prof-avatar"
+                      style="
+                        background: linear-gradient(135deg, #d4e9ff, #90caf9);
+                      "
+                    >
+                      👨
+                    </div>
+                    <span class="prof-name">Antoine Auclair</span>
+                  </div>
+                </td>
+                <td class="date-cell">11/02/2026</td>
+                <td class="hours">09:05 - 10:00</td>
+                <td><span class="badge badge-present">Présent</span></td>
+              </tr>
+              <tr>
+                <td class="course-name">Cours de Physique - chimie</td>
+                <td>
+                  <div class="prof-cell">
+                    <div
+                      class="prof-avatar"
+                      style="
+                        background: linear-gradient(135deg, #d4e9ff, #90caf9);
+                      "
+                    >
+                      👨
+                    </div>
+                    <span class="prof-name">Antoine Auclair</span>
+                  </div>
+                </td>
+                <td class="date-cell">11/02/2026</td>
+                <td class="hours">08:05 - 09:00</td>
+                <td><span class="badge badge-retard">En retard 🔔</span></td>
+              </tr>
+              <tr>
+                <td class="course-name">Cours de Philosophie</td>
+                <td>
+                  <div class="prof-cell">
+                    <div
+                      class="prof-avatar"
+                      style="
+                        background: linear-gradient(135deg, #e8f5e9, #a5d6a7);
+                      "
+                    >
+                      👨
+                    </div>
+                    <span class="prof-name">Hector Rey</span>
+                  </div>
+                </td>
+                <td class="date-cell">10/02/2026</td>
+                <td class="hours">15:05 - 16:00</td>
+                <td><span class="badge badge-present">Présent</span></td>
+              </tr>
+              <tr>
+                <td class="course-name">Cours de Philosophie</td>
+                <td>
+                  <div class="prof-cell">
+                    <div
+                      class="prof-avatar"
+                      style="
+                        background: linear-gradient(135deg, #e8f5e9, #a5d6a7);
+                      "
+                    >
+                      👨
+                    </div>
+                    <span class="prof-name">Hector Rey</span>
+                  </div>
+                </td>
+                <td class="date-cell">10/02/2026</td>
+                <td class="hours">14:05 - 15:00</td>
+                <td><span class="badge badge-present">Présent</span></td>
+              </tr>
+              <tr>
+                <td class="course-name">Cours de Mathématiques</td>
+                <td>
+                  <div class="prof-cell">
+                    <div
+                      class="prof-avatar"
+                      style="
+                        background: linear-gradient(135deg, #d4e9ff, #90caf9);
+                      "
+                    >
+                      👨
+                    </div>
+                    <span class="prof-name">Antoine Auclair</span>
+                  </div>
+                </td>
+                <td class="date-cell">10/02/2026</td>
+                <td class="hours">13:05 - 14:00</td>
+                <td><span class="badge badge-present">Présent</span></td>
+              </tr>
+              <tr>
+                <td class="course-name">Finalisation du projet</td>
+                <td>
+                  <div class="prof-cell">
+                    <div
+                      class="prof-avatar"
+                      style="
+                        background: linear-gradient(135deg, #fce4ec, #f48fb1);
+                      "
+                    >
+                      👩
+                    </div>
+                    <span class="prof-name">Sacha Dubois</span>
+                  </div>
+                </td>
+                <td class="date-cell">10/02/2026</td>
+                <td class="hours">11:05 - 12:00</td>
+                <td><span class="badge badge-absent">Absent 🔔</span></td>
+              </tr>
+              <tr>
+                <td class="course-name">Cours de Français</td>
+                <td>
+                  <div class="prof-cell">
+                    <div
+                      class="prof-avatar"
+                      style="
+                        background: linear-gradient(135deg, #ffecd2, #fcb69f);
+                      "
+                    >
+                      👩
+                    </div>
+                    <span class="prof-name">Isabelle Dubois</span>
+                  </div>
+                </td>
+                <td class="date-cell">10/02/2026</td>
+                <td class="hours">10:05 - 11:00</td>
+                <td><span class="badge badge-absent">Absent 🔔</span></td>
+              </tr>
+              <tr>
+                <td class="course-name">Cours de Français</td>
+                <td>
+                  <div class="prof-cell">
+                    <div
+                      class="prof-avatar"
+                      style="
+                        background: linear-gradient(135deg, #ffecd2, #fcb69f);
+                      "
+                    >
+                      👩
+                    </div>
+                    <span class="prof-name">Isabelle Dubois</span>
+                  </div>
+                </td>
+                <td class="date-cell">10/02/2026</td>
+                <td class="hours">09:05 - 10:00</td>
+                <td><span class="badge badge-absent">Absent 🔔</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <script src="assets/js/pointage.js"></script>
+  </body>
+</html>

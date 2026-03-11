@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/cours.css" />
+    <title>POINTIS - Emploi du temps</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        <div class="logo-text">P<span class="logo-dot">◉</span>INTIS</div>
+        <div class="logo-sub">Gestion Numérique</div>
+      </div>
+      <nav class="nav">
+        <a class="nav-item" href="accueil.html"
+          ><span class="nav-icon">🏠</span> Accueil</a
+        >
+        <a class="nav-item"><span class="nav-icon">📍</span> Pointages</a>
+        <a class="nav-item"><span class="nav-icon">〰️</span> Notes</a>
+        <a class="nav-item active"><span class="nav-icon">⊞</span> Cours</a>
+        <a class="nav-item"><span class="nav-icon">📝</span> Exams</a>
+        <a class="nav-item"><span class="nav-icon">👤</span> Kids</a>
+        <a class="nav-item"><span class="nav-icon">⚙️</span> Administrations</a>
+      </nav>
+      <div class="sidebar-footer">
+        <a class="nav-item"><span class="nav-icon">🔧</span> Paramétrages</a>
+        <a class="nav-item"><span class="nav-icon">🚪</span> Déconnexion</a>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="topbar-left">
+          <div class="topbar-greeting">BIENVENUE, Seny TARNAGADA</div>
+          <div class="topbar-sub">
+            Vous avez <span>12</span> notification(s) aujourd'hui.
+          </div>
+        </div>
+        <div class="topbar-right">
+          <button class="notif-btn">
+            🔔<span class="notif-badge">3</span>
+          </button>
+          <div class="user-chip">
+            <div class="user-avatar">🧑</div>
+            <div>
+              <div style="font-size: 11px; font-weight: 800">Seny</div>
+              <div
+                style="font-size: 10px; color: var(--muted); font-weight: 500"
+              >
+                TARNAGADA ∨
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="content">
+        <div class="page-header">
+          <div class="page-title-row">
+            <div class="page-icon">📅</div>
+            <div class="page-title">Emploi du temps</div>
+          </div>
+          <div class="trimestre-badge">1er TRIMESTRE 2026</div>
+        </div>
+
+        <div class="timetable-wrap">
+          <table class="timetable">
+            <thead>
+              <tr>
+                <th></th>
+                <th>LUNDI</th>
+                <th>MARDI</th>
+                <th>MERCREDI</th>
+                <th>JEUDI</th>
+                <th>VENDREDI</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="time-cell">8h00</td>
+                <td class="course-cell" rowspan="2">
+                  <div class="course-name">MATHÉMATIQUES</div>
+                </td>
+                <td class="empty-cell"></td>
+                <td class="course-cell" rowspan="2">
+                  <div class="course-name">MATHÉMATIQUES</div>
+                </td>
+                <td class="course-cell" rowspan="2">
+                  <div class="course-name">ÉDUCATION PHYSIQUE ET SPORT</div>
+                </td>
+                <td class="empty-cell"></td>
+              </tr>
+
+              <tr>
+                <td class="time-cell">9h00</td>
+                <td class="course-cell" rowspan="2">
+                  <div class="course-name">FRANÇAIS</div>
+                </td>
+                <td class="course-cell" rowspan="2">
+                  <div class="course-name">SCIENCES</div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="time-cell">10h00</td>
+                <td class="course-cell" rowspan="2">
+                  <div class="course-name">ANGLAIS LV1</div>
+                </td>
+                <td class="course-cell" rowspan="2">
+                  <div class="course-name">ESPAGNOL LV2</div>
+                </td>
+                <td class="course-cell" rowspan="2">
+                  <div class="course-name">HISTOIRE &amp; GÉOGRAPHIE</div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="time-cell">11h00</td>
+                <td class="empty-cell"></td>
+              </tr>
+
+              <tr>
+                <td class="time-cell">12h00</td>
+                <td class="empty-cell"></td>
+                <td class="empty-cell"></td>
+                <td class="empty-cell"></td>
+                <td class="empty-cell"></td>
+                <td class="empty-cell"></td>
+              </tr>
+
+              <tr>
+                <td class="time-cell">13h00</td>
+                <td class="course-cell" rowspan="2">
+                  <div class="course-name">ÉDUCATION PHYSIQUE ET SPORT</div>
+                </td>
+                <td class="course-cell" rowspan="2">
+                  <div class="course-name">SCIENCES VIE &amp; TERRE</div>
+                </td>
+                <td class="course-cell" rowspan="2">
+                  <div class="course-name">SC. ÉCONOMIE &amp; SOCIALES</div>
+                </td>
+                <td class="empty-cell"></td>
+                <td class="course-cell" rowspan="2">
+                  <div class="course-name">HEURE CREUSE</div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="time-cell">14h00</td>
+                <td class="course-cell" rowspan="2">
+                  <div class="course-name">MATHÉMATIQUES</div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="time-cell">15h00</td>
+                <td class="empty-cell"></td>
+                <td class="course-cell" rowspan="2">
+                  <div class="course-name">HISTOIRE &amp; GÉOGRAPHIE</div>
+                </td>
+                <td class="course-cell" rowspan="2">
+                  <div class="course-name">FRANÇAIS</div>
+                </td>
+                <td class="empty-cell"></td>
+                <td class="course-cell" rowspan="2">
+                  <div class="course-name">SCIENCES VIE &amp; TERRE</div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="time-cell">16h00</td>
+                <td class="course-cell" rowspan="2">
+                  <div class="course-name">PHYSIQUE CHIMIE</div>
+                </td>
+                <td class="course-cell" rowspan="2">
+                  <div class="course-name">SCIENCES</div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="time-cell">17h00</td>
+                <td class="empty-cell"></td>
+                <td class="empty-cell"></td>
+                <td class="empty-cell"></td>
+              </tr>
+
+              <tr>
+                <td class="time-cell">18h00</td>
+                <td class="empty-cell"></td>
+                <td class="empty-cell"></td>
+                <td class="empty-cell"></td>
+                <td class="empty-cell"></td>
+                <td class="empty-cell"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <script src="assets/js/cours.js"></script>
+  </body>
+</html>

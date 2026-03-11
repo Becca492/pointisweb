@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/connexion.css" />
+    <title>Connexion - Éducation</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="left-panel">
+      <h1 class="welcome-title">Bienvenue</h1>
+      <p class="welcome-sub">Entrez s'il vous plaît vos informations</p>
+
+      <div class="field">
+        <label>Email</label>
+        <div class="field-input-wrap">
+          <input type="email" placeholder="" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Mot de passe</label>
+        <div class="field-input-wrap">
+          <input type="password" id="pwd" placeholder="" />
+          <button class="eye-btn" onclick="togglePwd()" title="Afficher">
+            👁
+          </button>
+        </div>
+      </div>
+
+      <div class="options-row">
+        <label class="remember">
+          <input type="checkbox" /> Se souvenir de moi
+        </label>
+        <a href="#" class="forgot">Mot de passe oublié ?</a>
+      </div>
+
+      <button class="btn-connexion">
+        <a href="accueil.html">Connexion</a>
+      </button>
+      <button class="btn-numero">
+        <span>📱</span> Se connecter avec un numero
+      </button>
+    </div>
+
+    <div class="right-panel"></div>
+
+    <div class="laptop-base"></div>
+    <div class="laptop-foot"></div>
+    <script src="assets/js/connexion.js"></script>
+  </body>
+</html>
