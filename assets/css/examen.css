@@ -53,15 +53,15 @@ body {
 }
 
 .page-title {
-  font-size: 18px;
-  font-weight: 800;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .date-range {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
 }
 
@@ -103,7 +103,7 @@ body {
 }
 
 .subject-label {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   color: #333;
 }
