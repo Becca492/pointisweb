@@ -20,10 +20,10 @@
       </div>
 
       <nav class="nav">
-        <a class="nav-item active" href="accueil.html">
+        <a class="nav-item" href="accueil.html">
           <span class="nav-icon">🏠</span> Accueil
         </a>
-        <a class="nav-item" href="pointage.html">
+        <a class="nav-item active" href="pointage.html">
           <span class="nav-icon">📍</span> Pointages
         </a>
         <a class="nav-item" href="cours.html">
@@ -76,7 +76,9 @@
       <div class="content">
         <div class="page-header">
           <div class="page-title-row">
-            <div class="page-icon">📍</div>
+            <div class="page-icon">
+              <img src="assets/img/1.png" class="image" alt="" />
+            </div>
             <div class="page-title">Listes des pointages</div>
           </div>
           <div class="date-range">
@@ -172,8 +174,14 @@
                 </td>
                 <td class="date-cell">11/02/2026</td>
                 <td class="hours">08:05 - 09:00</td>
-                <td><span class="badge badge-retard">En retard 🔔</span></td>
+                <td>
+                  <div class="badge-wrapper">
+                    <span class="badge badge-retard">En retard</span>
+                    <span class="triangle-icon">⚠️</span>
+                  </div>
+                </td>
               </tr>
+
               <tr>
                 <td class="course-name">Cours de Philosophie</td>
                 <td>
@@ -248,7 +256,12 @@
                 </td>
                 <td class="date-cell">10/02/2026</td>
                 <td class="hours">11:05 - 12:00</td>
-                <td><span class="badge badge-absent">Absent 🔔</span></td>
+                <td>
+                  <div class="badge-wrapper">
+                    <span class="badge badge-absent">En retard</span>
+                    <span class="triangle-icon">⚠️</span>
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td class="course-name">Cours de Français</td>
@@ -267,7 +280,12 @@
                 </td>
                 <td class="date-cell">10/02/2026</td>
                 <td class="hours">10:05 - 11:00</td>
-                <td><span class="badge badge-absent">Absent 🔔</span></td>
+                <td>
+                  <div class="badge-wrapper">
+                    <span class="badge badge-absent">En retard</span>
+                    <span class="triangle-icon">⚠️</span>
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td class="course-name">Cours de Français</td>
@@ -286,7 +304,12 @@
                 </td>
                 <td class="date-cell">10/02/2026</td>
                 <td class="hours">09:05 - 10:00</td>
-                <td><span class="badge badge-absent">Absent 🔔</span></td>
+                <td>
+                  <div class="badge-wrapper">
+                    <span class="badge badge-absent">En retard</span>
+                    <span class="triangle-icon">⚠️</span>
+                  </div>
+                </td>
               </tr>
             </tbody>
           </table>

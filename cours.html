@@ -70,14 +70,160 @@
       <div class="content">
         <div class="page-header">
           <div class="page-title-row">
-            <div class="page-icon">📅</div>
+            <img src="assets/img/4.png" class="image" />
+            <div class="page-icon"></div>
             <div class="page-title">Emploi du temps</div>
           </div>
-          <div class="trimestre-badge">1er TRIMESTRE 2026</div>
+          <div style="position: relative">
+            <div
+              class="trimestre-badge badge-t1"
+              id="trimestre-badge"
+              onclick="toggleDropdown()"
+            >
+              1er TRIMESTRE 2026 ▾
+            </div>
+            <div class="trim-dropdown" id="trim-dropdown">
+              <div class="trim-option active-t1" onclick="setTrimestre(1)">
+                1er TRIMESTRE 2026
+              </div>
+              <div class="trim-option" onclick="setTrimestre(2)">
+                2ème TRIMESTRE 2026
+              </div>
+              <div class="trim-option" onclick="setTrimestre(3)">
+                3ème TRIMESTRE 2026
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="timetable-wrap">
-          <table class="timetable">
+          <table class="timetable" id="table-t1">
+            <thead>
+              <tr>
+                <th></th>
+                <th>LUNDI</th>
+                <th>MARDI</th>
+                <th>MERCREDI</th>
+                <th>JEUDI</th>
+                <th>VENDREDI</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="time-cell">8h00</td>
+                <td class="course-cell" rowspan="2">
+                  <div class="course-name">MATHÉMATIQUES</div>
+                </td>
+                <td class="empty-cell"></td>
+                <td class="course-cell" rowspan="2">
+                  <div class="course-name">MATHÉMATIQUES</div>
+                </td>
+                <td class="course-cell" rowspan="2">
+                  <div class="course-name">ÉDUCATION PHYSIQUE ET SPORT</div>
+                </td>
+                <td class="empty-cell"></td>
+              </tr>
+
+              <tr>
+                <td class="time-cell">9h00</td>
+                <td class="course-cell" rowspan="2">
+                  <div class="course-name">FRANÇAIS</div>
+                </td>
+                <td class="course-cell" rowspan="2">
+                  <div class="course-name">SCIENCES</div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="time-cell">10h00</td>
+                <td class="course-cell" rowspan="2">
+                  <div class="course-name">ANGLAIS LV1</div>
+                </td>
+                <td class="course-cell" rowspan="2">
+                  <div class="course-name">ESPAGNOL LV2</div>
+                </td>
+                <td class="course-cell" rowspan="2">
+                  <div class="course-name">HISTOIRE &amp; GÉOGRAPHIE</div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="time-cell">11h00</td>
+                <td class="empty-cell"></td>
+              </tr>
+
+              <tr>
+                <td class="time-cell">12h00</td>
+                <td class="empty-cell"></td>
+                <td class="empty-cell"></td>
+                <td class="empty-cell"></td>
+                <td class="empty-cell"></td>
+                <td class="empty-cell"></td>
+              </tr>
+
+              <tr>
+                <td class="time-cell">13h00</td>
+                <td class="course-cell" rowspan="2">
+                  <div class="course-name">ÉDUCATION PHYSIQUE ET SPORT</div>
+                </td>
+                <td class="course-cell" rowspan="2">
+                  <div class="course-name">SCIENCES VIE &amp; TERRE</div>
+                </td>
+                <td class="course-cell" rowspan="2">
+                  <div class="course-name">SC. ÉCONOMIE &amp; SOCIALES</div>
+                </td>
+                <td class="empty-cell"></td>
+                <td class="course-cell" rowspan="2">
+                  <div class="course-name">HEURE CREUSE</div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="time-cell">14h00</td>
+                <td class="course-cell" rowspan="2">
+                  <div class="course-name">MATHÉMATIQUES</div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="time-cell">15h00</td>
+                <td class="empty-cell"></td>
+                <td class="course-cell" rowspan="2">
+                  <div class="course-name">HISTOIRE &amp; GÉOGRAPHIE</div>
+                </td>
+                <td class="course-cell" rowspan="2">
+                  <div class="course-name">FRANÇAIS</div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="time-cell">16h00</td>
+                <td class="course-cell" rowspan="2">
+                  <div class="course-name">PHYSIQUE CHIMIE</div>
+                </td>
+                <td class="course-cell" rowspan="2">
+                  <div class="course-name">SCIENCES</div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="time-cell">17h00</td>
+                <td class="empty-cell"></td>
+                <td class="empty-cell"></td>
+                <td class="empty-cell"></td>
+              </tr>
+
+              <tr>
+                <td class="time-cell">18h00</td>
+                <td class="empty-cell"></td>
+                <td class="empty-cell"></td>
+                <td class="empty-cell"></td>
+                <td class="empty-cell"></td>
+                <td class="empty-cell"></td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="timetable" id="table-t2" style="display: none">
             <thead>
               <tr>
                 <th></th>
