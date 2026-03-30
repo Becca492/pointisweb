@@ -118,3 +118,236 @@ body {
   color: #333;
   margin-top: 10px;
 }
+
+.kid-select-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg);
+  border: 1.5px solid var(--border);
+  border-radius: 24px;
+  padding: 5px 14px 5px 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.kid-select-wrap:hover {
+  border-color: var(--green);
+}
+.kid-select-wrap.selected {
+  border-color: var(--green);
+  background: #e8f5e9;
+}
+.kid-select {
+  border: none;
+  background: transparent;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+  outline: none;
+  font-family: "Nunito", sans-serif;
+  cursor: pointer;
+}
+
+.eleve-banner {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  margin-bottom: 16px;
+  animation: fadeUp 0.3s ease both;
+}
+.eleve-emoji {
+  font-size: 28px;
+  width: 48px;
+  height: 48px;
+  background: #e8f5e9;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.eleve-nom {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--text);
+}
+.eleve-classe {
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.exam-stats-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-bottom: 20px;
+  animation: fadeUp 0.3s ease both;
+}
+.exam-stat-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.exam-stat-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+.exam-stat-label {
+  font-size: 10px;
+  color: var(--muted);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.exam-stat-value {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--text);
+  line-height: 1.2;
+}
+
+/* ════════════════════════════════════════
+   SECTIONS & CARTES EXAMENS
+   ════════════════════════════════════════ */
+.exam-section {
+  margin-bottom: 20px;
+  animation: fadeUp 0.35s ease 0.05s both;
+}
+.exam-section-title {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--border);
+}
+.exam-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.exam-card {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition:
+    transform 0.18s,
+    box-shadow 0.18s;
+}
+.exam-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+.exam-card-left {
+  flex: 1;
+  padding: 12px 16px;
+}
+.exam-card-right {
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 8px;
+  min-width: 140px;
+  border-left: 1px solid var(--border);
+}
+.exam-type-badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 800;
+  padding: 2px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+.exam-matiere {
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.3;
+}
+.exam-sujet {
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 500;
+  margin-top: 4px;
+}
+.exam-date-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.upcoming-badge {
+  background: #fff8e1;
+  color: #f57f17;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 12px;
+  border-radius: 20px;
+}
+
+.note-pill {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 800;
+}
+.note-good {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+.note-mid {
+  background: #fff8e1;
+  color: #f57f17;
+}
+.note-bad {
+  background: #ffebee;
+  color: #f44336;
+}
+
+.exam-empty {
+  text-align: center;
+  padding: 24px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px dashed var(--border);
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
